@@ -1,0 +1,43 @@
+
+/* print */
+
+@page {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+svg>.highcharts-button {
+    display: none !important;
+}
+body {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.dont-print {
+	display: none;
+}
+.table-scrollable {
+	padding: 20px 20px 0 20px;
+}
+.tableprint-rg {
+  padding: 20px;
+}
+thead {display: table-header-group;}
+thead {
+    page-break-before: always;
+    page-break-inside: avoid;
+}
+#header,
+#footer,
+.HeaderSection,
+.FooterSection,
+#head,
+#foot {
+	display: none;
+}
+.table-filtersearch-region {
+    display: block;
+}
+
+/* end print */

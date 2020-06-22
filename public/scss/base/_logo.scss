@@ -1,0 +1,11 @@
+.logo {
+    width:129px;
+    height:129px;
+    background-image: url($images+"logo/logo.svg");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: $border-radius-lg;
+    display:block;
+    margin: 20px auto;
+} 

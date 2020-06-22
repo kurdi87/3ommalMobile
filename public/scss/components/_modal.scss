@@ -1,0 +1,100 @@
+.fade {
+    transition: opacity .15s linear; 
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    outline: 0;
+    z-index: 1072;
+    &.fade.show {
+        opacity: 1;
+        display: flex;
+    }
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1040;
+        background-color:$color-black;
+        opacity: 0.6;
+    }
+
+    .modal-dialog {
+        position: relative;
+        width: 360px;
+        margin: .5rem;
+        transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+        -webkit-transform: translate(0,-25%);
+        transform: translate(0,-25%);
+        z-index: 10000;
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0); 
+    }
+
+    .close {
+        border: none;
+        width: 35px;
+        margin: 10px 10px 0 0;
+        background-color:transparent;
+        background-position: -28px -28px;
+    }
+    .modal-footer {
+        margin-top:50px;
+        width: auto;
+        text-align: center;
+        display: none;
+    }
+    .modal-message {
+        background-color:$color-white;
+        border-radius: 50px;
+        color:$color-silver;
+        display: inline-block;
+        padding:20px;
+    }
+    .modal-confirm {
+        display: flex;
+        justify-content: space-around;
+        align-items: self-end;
+        flex: 1 100%;
+        text-align: center;
+        flex-direction: row;
+        border-top:solid 1px $color-gray-lighter;
+        margin-top:10px;
+        a {
+            display: block;
+            width: 100%;
+            border-radius: 0;
+            &:first-child {
+                border-bottom-right-radius: $border-radius-lg;
+            }
+            &:last-child {
+                border-bottom-left-radius: $border-radius-lg;
+            }
+        }
+    }
+}
+.modal-open {
+    .modal {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+}
+
+@media(min-width: 997px) {
+    .modal .modal-dialog {
+        width: 540px;
+    }
+}

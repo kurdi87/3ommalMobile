@@ -1,0 +1,279 @@
+.icon {
+    background-image: url($icons+"icons.svg");
+    background-size: 900px;
+    background-position:  0 -13px;
+    text-indent: -9999px;
+    display: inline-block;
+    &.icon-lg {
+        -moz-transform: scale(3,3);
+        -ms-transform: scale(3,3);
+        -webkit-transform: scale(3,3);
+        -o-transform: scale(3,3);
+        transform: scale(3,3); 
+    }
+    &.white {
+        filter: brightness(0) invert(1);
+    }
+    &.settings {
+        background-size: 650px;
+        background-position: -80px -9px;
+        width: 34px;
+        height: 47px;
+    }
+    &.profile {
+        background-size: 650px;
+        background-position: -144px -9px;
+        width: 36px;
+        height: 47px;
+    }
+    &.money {
+        width: 45px;
+        height: 45px;
+        background-position: -216px -11px;
+        background-size: 680px;
+    }
+    &.conversation {
+        width: 45px;
+        height: 45px;
+        background-position: -286px -11px;
+        background-size: 680px;
+    }
+    &.icon-form {
+        width: 45px;
+        height: 45px;
+        background-position: -348px -11px;
+        background-size: 680px;
+    }
+    &.work {
+        width: 45px;
+        height: 47px;
+        background-position: -419px -11px;
+        background-size: 680px;
+    }
+    &.arrow-left {
+        width: 45px;
+        height: 47px;
+        background-position: -1289px 6px;
+        background-size: 340px;
+    }
+    &.arrow-right {
+        width: 45px;
+        height: 47px;
+        background-position: -1289px 6px;
+        background-size: 340px;
+        transform: rotate(180deg);
+    }
+    &.request {
+        width: 45px;
+        height: 47px;
+        background-position: -1483px -2px;
+        background-size: 400px;
+    }
+    &.icon-date {
+        width: 30px;
+        height: 30px;
+        background-position: -631px -19px;
+        background-size: 680px;
+    }
+    &.icon-upload {
+        width: 26px;
+        height: 28px;
+        background-position: -21px -88px;
+        background-size: 680px;
+    }
+    &.icon-constructions {
+        width: 37px;
+        height: 37px;
+        background-position: -84px -81px;
+        background-size: 680px;
+    }
+    &.icon-cultivation {
+        width: 37px;
+        height: 37px;
+        background-position: -152px -85px;
+        background-size: 680px;
+    }
+    &.icon-maintenance {
+        width: 37px;
+        height: 37px;
+        background-position: -220px -82px;
+        background-size: 680px;
+    }
+    &.icon-restaurants {
+        width: 37px;
+        height: 37px;
+        background-position: -229px -64px;
+        background-size: 550px;
+    }
+    &.icon-road-working {
+        width: 37px;
+        height: 37px;
+        background-position: -317px -75px;
+        background-size: 610px;
+    }
+    &.icon-occupations {
+        width: 37px;
+        height: 37px;
+        background-position: -424px -83px;
+        background-size: 680px;
+    }
+    &.icon-factory {
+        width: 37px;
+        height: 37px;
+        background-position: -447px -75px;
+        background-size: 620px;
+    }
+    &.icon-hotels {
+        width: 37px;
+        height: 37px;
+        background-position: -509px -75px;
+        background-size: 620px;
+    }
+    &.icon-shopping {
+        width: 37px;
+        height: 37px;
+        background-position: -562px -73px;
+        background-size: 610px;
+    }
+    &.icon-medical {
+        width: 37px;
+        height: 37px;
+        background-position: -12px -132px;
+        background-size: 600px;
+    }
+    &.icon-health {
+        width: 37px;
+        height: 37px;
+        background-position: -84px -152px;
+        background-size: 680px;
+    }
+    &.icon-cleaning {
+        width: 37px;
+        height: 37px;
+        background-position: -151px -152px;
+        background-size: 680px;
+    }
+    &.icon-drivers {
+        width: 37px;
+        height: 37px;
+        background-position: -219px -152px;
+        background-size: 680px;
+    }
+    &.icon-plus {
+        width: 37px;
+        height: 37px;
+        background-position: -287px -151px;
+        background-size: 680px;
+    }
+    &.icon-plus-blue {
+        width: 22px;
+        height: 22px;
+        background-position: -795px -103px;
+        background-size: 460px;
+    }
+    &.icon-camera {
+        width: 22px;
+        height: 19px;
+        background-position: -914px -114px;
+        background-size: 500px;
+    }
+    &.icon-send-message {
+        width: 22px;
+        height: 21px;
+        background-position: -963px -113px;
+        background-size: 500px;
+    }
+    &.logo-questions {
+        width: 54px;
+        height: 78px;
+        background-position: -457px -180px;
+        background-size: 880px;
+    }
+    &.icon-arrow-next {
+        width: 18px;
+        height: 16px;
+        background-position: -437px -161px;
+        background-size: 680px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &.icon-arrow-prev {
+        width: 18px;
+        height: 16px;
+        background-position: -437px -161px;
+        background-size: 680px;
+        display: inline-block;
+        vertical-align: middle;
+        transform: rotateX(180deg);
+        -webkit-transform: rotateY(180deg);
+    }
+    &.icon-phone {
+        background-size: 650px;
+        background-position: -17px -206px;
+        width: 34px;
+        height: 41px;
+    }
+    &.icon-down-app {
+        background-size: 900px;
+        background-position: -106px -275px;
+        width: 61px;
+        height: 79px;
+        &.down-app-primary {
+            background-position: -646px -275px; 
+        }
+    }
+    &.icon-fb {
+        background-image: url($icons + 'fb.svg');
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-size: 20px;
+        background-position: 0 0;
+    }
+    &.icon-tw {
+        background-image: url($icons + 'tw.svg');
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-size: 20px;
+        background-position: 0 0;
+    }
+    &.icon-instagram {
+        background-image: url($icons + 'instagram.svg');
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-size: 20px;
+        background-position: 0 0;
+    }
+    &.icon-user {
+        width: 23px;
+        height: 21px;
+        background-position: -1112px -163px;
+        background-size: 500px;
+    }
+    &.icon-info {
+        width: 23px;
+        height: 21px;
+        background-position: -1162px -163px;
+        background-size: 500px;
+    }
+    &.icon-privacy {
+        width: 23px;
+        height: 21px;
+        background-position: -1212px -163px;
+        background-size: 500px;
+    }
+    &.icon-about {
+        width: 23px;
+        height: 21px;
+        background-position: -1262px -163px;
+        background-size: 500px;
+    }
+    &.icon-contactus {
+        width: 23px;
+        height: 21px;
+        background-position: -1315px -161px;
+        background-size: 500px;
+    }
+}

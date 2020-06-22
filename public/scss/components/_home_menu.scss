@@ -1,0 +1,92 @@
+.home-menu {
+    position: relative;
+    .home-menu-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        &:before,
+        &:after {
+            background-repeat: no-repeat !important;
+        } 
+        &:before {
+            background: url($icons + "home_bg_right.svg");
+            content: "";
+            height: 495px;
+            width: 180px;
+            position: absolute;
+            right: 0;
+            background-size: 181px;
+            z-index: -1;
+            top: -50px;
+            background-position: 0 0px;
+        }
+        &:after { 
+            background: url($icons + "requests-left.svg");
+            content: "";
+            height: 495px;
+            width: 80px;
+            position: absolute;
+            left: 0;
+            background-size: 34px;
+            z-index: -1;
+            top: 0px;
+        }
+
+        .home-menu-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            border-radius: 140px;
+            padding: 10px;
+            color: $color-white;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.23);
+            font-weight: bold;
+            line-height: 28px;
+            cursor: pointer;
+            .home-menu-icon {
+
+            }
+            .home-menu-title {
+
+            }
+
+            &.menu-item-1 {
+                margin-left: 100px;
+            }
+            &.menu-item-2 {
+                margin-right: 150px;
+                margin-top: -60px;
+            }
+            &.menu-item-3 {
+                margin-right: -178px;
+                margin-top: -105px;
+            }
+            &.menu-item-4 {
+                margin-top: -73px;
+                margin-right: 82px;
+            }
+            &.md {
+                width: 140px;
+                height: 140px;
+            }
+            &.sm {
+                width: 130px;
+                height: 130px;
+            }
+        }
+    }
+}
+@media(min-width: 997px) {
+    .home-menu .home-menu-container .home-menu-content {
+        font-size:80%;
+    }
+}
+

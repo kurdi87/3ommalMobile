@@ -1,0 +1,16 @@
+.main {
+    width: 100%;
+    float:right;
+    &.circles-bg { 
+        background: url($main-bg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media(min-width: 997px) {
+    .main.circles-bg {
+        background-size: 160%;
+    }
+}

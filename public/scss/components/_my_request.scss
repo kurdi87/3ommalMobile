@@ -1,0 +1,33 @@
+.my-requests {
+    .my-request-container {
+        margin: 0 20px;
+        padding-bottom: 20px;
+        .my-request-number {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            width: 100%;
+            padding: 22px 0 20px 0;
+            color:$color-gray-dark;
+            border-bottom: solid 1px $color-gray-lighter;
+            .icon {
+                border-radius: 50px;
+                background-color:$color-blue;
+                width: 35px;
+                height: 35px;
+                margin-left: 10px;
+            }
+            .my-request-title {
+                width:80%;
+            }
+        }
+        .my-request-date {
+            text-align: left;
+            color:$color-silver;
+            font-size: 90%;
+            width: 100%;
+            padding-top: 20px;
+        }
+    }
+}

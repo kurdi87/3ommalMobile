@@ -1,0 +1,76 @@
+{
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [ "framework", "laravel" ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=5.5.9",
+    "laravel/framework": "5.2.*",
+    "laravelcollective/html": "5.2.*",
+    "yajra/laravel-datatables-oracle": "~5.0",
+    "sarav/laravel-multiauth": "^0.0.7",
+    "phpseclib/phpseclib": "*",
+
+
+    "barryvdh/laravel-cors": "^0.8.0",
+    "maatwebsite/excel": "~2.1.0",
+    "dompdf/dompdf": "~0.6.1",
+    "mpdf/mpdf": "~5.7.3",
+    "tecnickcom/tcpdf": "~6.0.0",
+    "intervention/image": "^2.4",
+    "gr8shivam/laravel-sms-api": "^3.0",
+    "nitmedia/wkhtml2pdf": "^2.1",
+    "nwidart/laravel-modules": "^3.2",
+    "prettus/l5-repository": "^2.6",
+    "tymon/jwt-auth": "0.5.9"
+
+
+  },
+  "require-dev": {
+    "fzaninotto/faker": "~1.4",
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit": "~4.0",
+    "symfony/css-selector": "2.8.*|3.0.*",
+    "symfony/dom-crawler": "2.8.*|3.0.*"
+
+  },
+  "autoload": {
+    "classmap": [
+      "database"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/helper.php"
+    ]
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/TestCase.php"
+    ]
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "php artisan key:generate"
+    ],
+    "post-install-cmd": [
+      "php artisan clear-compiled",
+      "php artisan optimize"
+    ],
+    "pre-update-cmd": [
+      "php artisan clear-compiled"
+    ],
+    "post-update-cmd": [
+      "php artisan optimize"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist"
+  }
+
+}

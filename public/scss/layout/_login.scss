@@ -1,0 +1,38 @@
+@media(min-width: 997px) {
+    .login-page {
+        background-color: $color-orange;
+    }
+    .login {
+        min-height: 90vh;
+    }
+}
+@media(max-width: 996px) {
+    .login-page {
+        background-color:$color-gray-lighter;
+    }
+}
+
+.login { 
+    width:100%;
+
+    padding: 50px 0;
+    text-align: center; 
+    .box-content {
+        padding: 65px 15px;
+        .btn-primary {
+            margin-top:20px; 
+        }
+    }
+    .btn-n-bg {
+        margin-top: 50px;
+    }
+    h1 {
+        color: $color-white;
+        font-size:130%;
+        margin: 25px 0 50px 0;
+    }
+    h2 {
+        font-size:100%;
+        margin-bottom:15px;
+    }
+}

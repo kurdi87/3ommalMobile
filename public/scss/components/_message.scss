@@ -1,0 +1,16 @@
+.form-messages {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    .form-message {
+        background-color: $color-gray-dark;
+        color:$color-white;
+        padding: 19px;
+        border-radius: $border-radius-lg;
+        font-size: 70%;
+        margin: 0 40px;
+        text-align: center;
+        line-height: 20px;
+    }
+}

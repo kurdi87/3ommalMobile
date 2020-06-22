@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.2em;
+    direction: rtl;
+}
+
+.text-white { color: $color-white}
+.text-black { color: $color-black}
+.text-blue { color: $color-blue}
+.text-orange { color: $color-orange}
+.text-silver { color: $color-silver}
+.text-gray { color: $color-gray}
+.text-gray-light { color: $color-gray-light}
+.text-gray-lighter { color: $color-gray-lighter}
+.text-gray-dark { color: $color-gray-dark}
+
+.bg-white { background-color: $color-white}
+.bg-black { background-color: $color-black}
+.bg-blue { background-color: $color-blue}
+.bg-orange { background-color: $color-orange}
+.bg-silver { background-color: $color-silver}
+.bg-gray { background-color: $color-gray}
+.bg-gray-light { background-color: $color-gray-light}
+.bg-gray-lighter { background-color: $color-gray-lighter}
+.bg-gray-dark { background-color: $color-gray-dark}
+
+
+.text-center { text-align: center;}
+.text-left { text-align: left;}
+.text-right { text-align: right !important;}
+
+.text-lighter { font-weight: lighter;}
+
+.bg-gray {
+    background-color:$color-gray-lighter;
+}
+
+.m-t-b-20 { margin: 20px 0; }
+
+.m-t-10 { margin-top: 10px; }
+.m-t-20 { margin-top: 20px; }
+.m-t-30 { margin-top: 30px; }
+.m-t-40 { margin-top: 40px; }
+.m-t-50 { margin-top: 50px; }
+.m-t-60 { margin-top: 60px; }
+.m-t-70 { margin-top: 70px; }
+.m-t-80 { margin-top: 80px; }
+.m-t-90 { margin-top: 90px; }
+.m-t-100 { margin-top: 100px; }
+
+.m-b-10 { margin-bottom: 10px; }
+.m-b-20 { margin-bottom: 20px; }
+.m-b-30 { margin-bottom: 30px; }
+.m-b-40 { margin-bottom: 40px; }
+.m-b-50 { margin-bottom: 50px; }
+.m-b-60 { margin-bottom: 60px; }
+.m-b-70 { margin-bottom: 70px; }
+.m-b-80 { margin-bottom: 80px; }
+.m-b-90 { margin-bottom: 90px; }
+.m-b-100 { margin-bottom: 100px; }
+
+.h-100 { height: 100%; }
+
+.w-50-perc { width:50% }
+
+.r-50 {
+    border-radius: 50px !important;
+}
+.w-50 {
+    width: 50% !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+
+::-webkit-input-placeholder {
+    color: $color-gray-lighter;
+  }
+  :-ms-input-placeholder { 
+    color: $color-gray-lighter;
+  }
+  ::placeholder {
+    color: $color-gray-lighter;
+  }
+
+
+
+h1 {
+    font-size: 150%;
+}
+b {
+    font-weight: bold;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color:$color-blue;
+}
+textarea {
+    padding:12px;
+    width:100%;
+    border:solid 1px $color-gray-light;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 80%;
+    color: inherit;
+
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    &:focus {
+        border-color:$color-blue;
+    }
+}
+small {
+    font-size: 80%;
+}
+input, button {
+    height: 35px;
+    margin: 0;
+    padding: 6px 12px;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+}
+.container {
+    max-width: 997px;
+    margin: 0 auto;  
+}
+
+@media(min-width: 997px) {
+    body {
+        font-size:1.3em;
+    }
+}
+input[type="month"]::-webkit-inner-spin-button,    
+input[type="month"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button,    
+input[type="date"]::-webkit-clear-button { 
+    -webkit-appearance: none;
+    display: none; 
+    opacity:0; 
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+        font-size:90%;
+        font-weight: normal;
+        line-height: 24px;
+    }
+} 
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+        font-size:90%;
+        font-weight: normal;
+        line-height: 24px;
+    }
+}
